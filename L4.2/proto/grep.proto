@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package grep;
+option go_package = "grpc-grep/proto;proto";
+
+service GrepService {
+  rpc Grep(GrepRequest) returns (GrepResponse);
+}
+
+message GrepRequest {
+  repeated string lines = 1;
+  string pattern = 2;
+
+  int32 after = 3;
+  int32 before = 4;
+  bool count_only = 5;
+  bool ignore = 6;
+  bool invert = 7;
+  bool fixed = 8;
+  bool line_num = 9;
+  int32 line_offset = 10;
+}
+
+message GrepResponse {
+  repeated string output = 1;
+  int32 count = 2;
+}

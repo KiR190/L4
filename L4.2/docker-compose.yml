@@ -1,0 +1,19 @@
+services:
+  server1:
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    ports:
+      - "50051:50053"
+  server2:
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    ports:
+      - "50052:50053"
+  server3:
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    ports:
+      - "50053:50053"

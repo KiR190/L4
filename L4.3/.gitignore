@@ -1,0 +1,33 @@
+# Go build artifacts
+/bin/
+/build/
+/dist/
+/*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+*.golangci.yml
+
+# Logs
+*.log
+
+# Environment files
+.env
+*.env.local
+
+# Docker
+**/docker-data/
+**/tmp/
+**/.docker/
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

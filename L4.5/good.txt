@@ -1,0 +1,11 @@
+﻿goos: windows
+goarch: amd64
+pkg: sum-service/benchmarks
+cpu: AMD Ryzen 5 2600 Six-Core Processor            
+BenchmarkSumGood-12    	1000000000	         0.2832 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSumGood-12    	1000000000	         0.2914 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSumGood-12    	1000000000	         0.2799 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSumGood-12    	1000000000	         0.2752 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSumGood-12    	1000000000	         0.2823 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	sum-service/benchmarks	1.790s
